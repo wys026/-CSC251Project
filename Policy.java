@@ -70,6 +70,12 @@ public class Policy
 
    }
    
+   /**
+      Calculates BMI based on a formula.
+      @param weight Weight of the user.
+      @param height Height of the user.
+      @return BMI Calculated BMI of the user.
+   */
    public static double calculateBMI(double weight, double height)
    {
       double BMI = 0.0;
@@ -79,6 +85,13 @@ public class Policy
       return BMI;
    }
    
+   /**
+      Calculates the price of the policy based on the user's age, smoking status, and BMI.
+      @param age User's age.
+      @param smokingStatus If the user is a smoker Y/N.
+      @param BMI Calculated BMI of the user.
+      @return totalPrice Total price of the policy based on above factors.
+   */
    public static double calculatePolicyPrice(int age, String smokingStatus, double BMI)
    {
       final double BASE_FEE = 600.0,
